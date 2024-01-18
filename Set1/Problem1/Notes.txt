@@ -1,0 +1,280 @@
+https://en.wikipedia.org/wiki/Hexadecimal
+
+In mathematics and computing, hexadecimal (also base 16, or hex) is a positional system that represents numbers using a base of 16. 
+Unlike the common way of representing numbers with ten symbols, it uses sixteen distinct symbols, most often the symbols "0"–"9" to 
+represent values zero to nine, and "A"–"F" (or alternatively "a"–"f") to represent values ten to fifteen.
+
+Hexadecimal numerals are widely used by computer system designers and programmers, as they provide a human-friendly
+representation of binary-coded values. Each hexadecimal digit represents four binary digits, also known as a nibble, 
+which is half a byte. For example, a single byte can have values ranging from 00000000 to 11111111 in binary form, 
+which can be conveniently represented as 00 to FF in hexadecimal.
+
+0hex	=	0dec	=	0oct	0	0	0	0
+1hex	=	1dec	=	1oct	0	0	0	1
+2hex	=	2dec	=	2oct	0	0	1	0
+3hex	=	3dec	=	3oct	0	0	1	1
+4hex	=	4dec	=	4oct	0	1	0	0
+5hex	=	5dec	=	5oct	0	1	0	1
+6hex	=	6dec	=	6oct	0	1	1	0
+7hex	=	7dec	=	7oct	0	1	1	1
+8hex	=	8dec	=	10oct	1	0	0	0
+9hex	=	9dec	=	11oct	1	0	0	1
+Ahex	=	10dec	=	12oct	1	0	1	0
+Bhex	=	11dec	=	13oct	1	0	1	1
+Chex	=	12dec	=	14oct	1	1	0	0
+Dhex	=	13dec	=	15oct	1	1	0	1
+Ehex	=	14dec	=	16oct	1	1	1	0
+Fhex	=	15dec	=	17oct	1	1	1	1
+
+https://en.wikipedia.org/wiki/Base64
+
+In computer science, Base64 is a group of binary-to-text encoding schemes that represent binary data in an ASCII string 
+format by translating it into a radix-64 representation. The term Base64 originates from a specific MIME content transfer 
+encoding. Each Base64 digit represents exactly 6 bits of data. Three 8-bit bytes (i.e., a total of 24 bits) can therefore 
+be represented by four 6-bit Base64 digits.
+
+Common to all binary-to-text encoding schemes, Base64 is designed to carry data stored in binary formats across channels 
+that only reliably support text content. Base64 is particularly prevalent on the World Wide Web[1] where its uses include 
+the ability to embed image files or other binary assets inside textual assets such as HTML and CSS files.[2]
+
+Index	Binary	Char		Index	Binary	Char		Index	Binary	Char		Index	Binary	Char
+0	    000000	A	        16	    010000	Q	        32	    100000	g	        48	    110000	w
+1	    000001	B	        17	    010001	R	        33	    100001	h	        49	    110001	x
+2	    000010	C	        18	    010010	S	        34	    100010	i	        50	    110010	y
+3	    000011	D	        19	    010011	T	        35	    100011	j	        51	    110011	z
+4	    000100	E	        20	    010100	U	        36	    100100	k	        52	    110100	0
+5	    000101	F	        21	    010101	V	        37	    100101	l	        53	    110101	1
+6	    000110	G	        22	    010110	W	        38	    100110	m	        54	    110110	2
+7	    000111	H	        23	    010111	X	        39	    100111	n	        55	    110111	3
+8	    001000	I	        24	    011000	Y	        40	    101000	o	        56	    111000	4
+9	    001001	J	        25	    011001	Z	        41	    101001	p	        57	    111001	5
+10	    001010	K	        26	    011010	a	        42	    101010	q	        58	    111010	6
+11	    001011	L	        27	    011011	b	        43	    101011	r	        59	    111011	7
+12	    001100	M	        28	    011100	c	        44	    101100	s	        60	    111100	8
+13	    001101	N	        29	    011101	d	        45	    101101	t	        61	    111101	9
+14	    001110	O	        30	    011110	e	        46	    101110	u	        62	    111110	+
+15	    001111	P	        31	    011111	f	        47	    101111	v	        63	    111111	/
+padding	=
+
+Example
+
+The example below uses ASCII text for simplicity, but this is not a typical use case, as it can already be safely 
+transferred across all systems that can handle Base64. The more typical use is to encode binary data (such as an image); 
+the resulting Base64 data will only contain 64 different ASCII characters, all of which can reliably be transferred across 
+systems that may corrupt the raw source bytes.
+
+Here is a quote from Thomas Hobbes' Leviathan:
+
+Man is distinguished, not only by his reason, but by this singular passion from other animals, 
+which is a lust of the mind, that by a perseverance of delight in the continued and indefatigable 
+generation of knowledge, exceeds the short vehemence of any carnal pleasure.
+(Please note that all of the example encodings below use only the bytes shown here; there is no C-String-styled <Nul> terminator assumed.)
+
+When that quote is encoded into Base64, it is represented as a byte sequence of 8-bit-padded ASCII characters encoded 
+in MIME's Base64 scheme as follows (newlines and white spaces may be present anywhere but are to be ignored on decoding):
+
+TWFuIGlzIGRpc3Rpbmd1aXNoZWQsIG5vdCBvbmx5IGJ5IGhpcyByZWFzb24sIGJ1dCBieSB0aGlz
+IHNpbmd1bGFyIHBhc3Npb24gZnJvbSBvdGhlciBhbmltYWxzLCB3aGljaCBpcyBhIGx1c3Qgb2Yg
+dGhlIG1pbmQsIHRoYXQgYnkgYSBwZXJzZXZlcmFuY2Ugb2YgZGVsaWdodCBpbiB0aGUgY29udGlu
+dWVkIGFuZCBpbmRlZmF0aWdhYmxlIGdlbmVyYXRpb24gb2Yga25vd2xlZGdlLCBleGNlZWRzIHRo
+ZSBzaG9ydCB2ZWhlbWVuY2Ugb2YgYW55IGNhcm5hbCBwbGVhc3VyZS4=
+
+In the above quote, the encoded value of Man is TWFu. Encoded in ASCII, the characters M, a, and n are stored as 
+the bytes 77, 97, and 110, which are the 8-bit binary values 01001101, 01100001, and 01101110. These three values 
+are joined together into a 24-bit string, producing 010011010110000101101110. Groups of 6 bits (6 bits have a maximum of 
+26 = 64 different binary values) are converted into individual numbers from left to right (in this case, there are four 
+numbers in a 24-bit string), which are then converted into their corresponding Base64 character values.
+
+-- https://dev-notes.eu/2018/08/radix-64-encoding-with-example-implementation-in-c/
+
+UTF-8
+https://en.wikipedia.org/wiki/UTF-8
+
+UTF-8 is a variable width character encoding capable of encoding all 1,112,064[1] valid code points in Unicode 
+using one to four 8-bit bytes.[2] The encoding is defined by the Unicode Standard, and was originally designed by 
+Ken Thompson and Rob Pike.[3][4] The name is derived from Unicode (or Universal Coded Character Set) Transformation Format – 8-bit.[5]
+
+It was designed for backward compatibility with ASCII. Code points with lower numerical values, which tend to occur more frequently, 
+are encoded using fewer bytes. The first 128 characters of Unicode, which correspond one-to-one with ASCII, are encoded using a 
+single byte with the same binary value as ASCII, so that valid ASCII text is valid UTF-8-encoded Unicode as well. 
+Since ASCII bytes do not occur when encoding non-ASCII code points into UTF-8, UTF-8 is safe to use within most 
+programming and document languages that interpret certain ASCII characters in a special way, such as "/" (slash) in 
+filenames, "\" (backslash) in escape sequences, and "%" in printf.
+
+Usage of the main encodings on the web from 2001 to 2012 as recorded by Google,[6] with UTF-8 overtaking all others in 
+2008 and over 60% of the web in 2012. Note that the ASCII-only figure includes all web pages that only contains ASCII 
+characters, regardless of the declared header. Since 2009, UTF-8 has been the dominant encoding (of any kind, not just 
+of Unicode encodings) for the World Wide Web (and declared mandatory "for all things" by WHATWG[7]) and as of September 
+2019 accounts for 94.0% of all web pages (some of which are simply ASCII, as it is a subset of UTF-8) and 95% of the 
+top 1,000 highest ranked[8] web pages. The next-most popular multi-byte encodings, Shift JIS and GB 2312, have 0.3% and 
+0.3% respectively.[9][10][6] The Internet Mail Consortium (IMC) recommended that all e-mail programs be able to display 
+and create mail using UTF-8,[11] and the W3C recommends UTF-8 as the default encoding in XML and HTML.[12]
+
+
+Steps:
+
+To Binary:
+
+4 -> 0100
+9 -> 1001
+2 -> 0010
+7 -> 0111
+6 -> 0110
+d -> 1101 To Here
+2 -> 0010
+
+To Base64
+Shift Bits to make 6 from pairs of 4
+
+010010 -> S
+010010 -> S
+011101 -> d
+101101 -> t
+
+
+01001001
+00100111
+01101101
+00100000
+01101011
+01101001
+01101100
+01101100
+01101001
+01101110
+01100111
+00100000
+01111001
+01101111
+01110101
+01110010
+00100000
+01100010
+01110010
+01100001
+01101001
+01101110
+00100000
+01101100
+01101001
+01101011
+01100101
+00100000
+01100001
+00100000
+01110000
+01101111
+01101001
+01110011
+01101111
+01101110
+01101111
+01110101
+01110011
+00100000
+01101101
+01110101
+01110011
+01101000
+01110010
+01101111
+01101111
+01100000
+
+
+0100
+1001
+0010
+0111
+0110
+1101
+0010
+0000
+0110
+1011
+0110
+1001
+0110
+1100
+0110
+1100
+0110
+1001
+0110
+1110
+0110
+0111
+0010
+0000
+0111
+1001
+0110
+1111
+0111
+0101
+0111
+0010
+0010
+0000
+0110
+0010
+0111
+0010
+0110
+0001
+0110
+1001
+0110
+1110
+0010
+0000
+0110
+1100
+0110
+1001
+0110
+1011
+0110
+0101
+0010
+0000
+0110
+0001
+0010
+0000
+0111
+0000
+0110
+1111
+0110
+1001
+0111
+0011
+0110
+1111
+0110
+1110
+0110
+1111
+0111
+0101
+0111
+0011
+0010
+0000
+0110
+1101
+0111
+0101
+0111
+0011
+0110
+1000
+0111
+0010
+0110
+1111
+0110
+1111
+0110
+1101

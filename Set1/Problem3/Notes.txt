@@ -1,0 +1,9 @@
+ - https://en.wikipedia.org/wiki/Frequency_analysis
+ - https://en.wikipedia.org/wiki/Hexadecimal
+ - https://en.wikipedia.org/wiki/XOR_cipher
+
+ 1. E, T, A and O are the most common
+ 2. TH, ER, ON, and AN are the most common pairs
+ 3. ETAOIN SHRDLU
+
+ https://stackoverflow.com/questions/34555837/sort-hashmap-data-by-value
